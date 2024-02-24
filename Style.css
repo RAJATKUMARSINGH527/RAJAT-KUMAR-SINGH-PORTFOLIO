@@ -378,14 +378,14 @@ article .icon {
 /* PROJECTS SECTION */
 .project-description{
   text-align: left;
-  color:lightslategrey;
+  color:#004AAD;
   /* font-size: 17px; */
 }
 
 .project-description1{
   text-align: center;
   font-size: 17px;
-  color: #003449;
+  color: #004AAD;
 
 }
 .project-text {
