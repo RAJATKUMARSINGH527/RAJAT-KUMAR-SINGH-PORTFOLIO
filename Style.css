@@ -9,7 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color:lightskyblue;
+  background-color: lightskyblue;
 }
 
 html {
@@ -29,22 +29,28 @@ a,
 
 /* DESKTOP NAV */
 
-
+#desktop-nav{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 nav,
 .nav-links {
   display: flex;
-
+  align-items: center;
 }
 
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 15vh;
+  /* height: 15vh; */
   background-color:whitesmoke;
+  padding: 20px 20px;
+  /* top right bottom left */
 }
 
 .nav-links {
-  padding-top: 25px;
+  /* padding-top: 25px; */
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
@@ -56,11 +62,14 @@ a {
   text-decoration-color: #5C415D;
 }
 
-a:hover {
+.nav-links li a:hover {
   color: #008FC8;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: #14B0C8;
+}
+.nav-links li:last-child a:hover{
+  text-decoration: none;
 }
 
 .logo {
@@ -306,7 +315,7 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background:white;
+  background:whitesmoke;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -368,8 +377,8 @@ article .icon {
 
 /* PROJECTS SECTION */
 .project-description{
-  text-align: justify;
-  color: #003449;
+  text-align: left;
+  color:lightslategrey;
   /* font-size: 17px; */
 }
 
@@ -398,7 +407,7 @@ article .icon {
 
 .color-container {
   border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  background:whitesmoke;
 }
 
 .project-img {
@@ -441,7 +450,7 @@ article .icon {
 .contact-info-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 0.5rem;
   margin: 1rem;
 }
