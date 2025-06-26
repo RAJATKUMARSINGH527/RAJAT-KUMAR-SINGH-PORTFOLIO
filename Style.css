@@ -338,7 +338,7 @@ section {
 #projects {
   position: relative;
   padding: 4rem 2rem;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
 }
 
 .about-containers {
