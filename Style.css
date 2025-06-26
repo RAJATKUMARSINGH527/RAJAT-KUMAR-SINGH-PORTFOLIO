@@ -174,6 +174,48 @@ section {
 .section-container {
   display: flex;
 }
+ /* skill SECTION */
+
+
+#skills {
+  margin-top: 10%;
+  position: relative;
+}
+
+.skills-sub-title {
+  color: black;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.skills-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  margin-top: 40px;
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: left;
+  gap: 1.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
 
 /* PROFILE SECTION */
 
