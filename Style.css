@@ -175,98 +175,110 @@ section {
   display: flex;
 }
 
-#projects {
-  padding: 4rem 2rem;
-  background-color: #f9f9f9;
-}
+/* PROFILE SECTION */
 
-.projects-grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-/* Project Card Styles */
-.project-card {
-  background-color: #fff;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07);
+#profile {
+  margin-bottom: 200px;
   display: flex;
-  flex-direction: column;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
 }
 
-.project-img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+.section__text {
+  align-self: center;
+  text-align: center;
 }
 
-.project-content {
-  padding: 1.2rem;
-}
-
-.project-title {
-  font-size: 1.2rem;
+.section__text p {
   font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #222;
+}
+
+.section__text__p1 {
   text-align: center;
 }
 
-.project-description {
-  font-size: 0.95rem;
-  color: #333;
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
 
-.techstack-heading {
-  font-size: 1rem;
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  border-radius: 50%;
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
   font-weight: 600;
-  color: #004AAD;
-  margin-top: 0.5rem;
-  text-align: center;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
 }
 
-.techstack-list {
-  list-style: none;
-  padding-left: 0;
-  text-align: center;
-  margin: 0.5rem 0 1rem;
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
 
-.techstack-list li {
-  font-size: 0.9rem;
-  color: #004AAD;
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
 }
 
-/* Button */
-.project-btn {
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding: 0.6rem;
-  background-color: #004AAD;
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
   color: white;
-  border: none;
-  border-radius: 0.5rem;
-  font-weight: 600;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
   text-decoration: none;
-  transition: background-color 0.2s ease;
 }
 
-.project-btn:hover {
-  background-color: #002f6c;
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
 }
 
+.btn-container {
+  gap: 1rem;
+}
 
 /* ABOUT SECTION */
 
